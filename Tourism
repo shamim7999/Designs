@@ -1,0 +1,212 @@
+<-- HTML Part -->
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="t1css.css">
+</head>
+    <body>
+      
+        <div class="menu-bar">
+            
+            <ul>
+                <li class="active"><i class="fa fa-home"></i><a>Home</a></li>
+                <li><i class="fa fa-user"></i><a>About us</a>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li><a href="#">Mission</a></li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Fashion</a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+                
+                
+                <li><i class="fa fa-clone"></i><a>Services</a>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li><a href="#">Web Designing</a></li>
+                            <li class="hover-me"><a href="#">Marketing</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-menu2">
+                                    <ul>
+                                        <li><a href="#">SEO</a></li>
+                                        <li><a href="#">Social Media</a></li>
+                                        <li><a href="#">Emial Marketing</a></li>
+                                    </ul>
+                                
+                                </div>
+                            
+                            </li>
+                            
+                            
+                            
+                            <li class="hover-me"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
+                                
+                                <div class="sub-menu2">
+                                    <ul>
+                                        <li><a href="#">Android</a></li>
+                                        <li><a href="#">IOS</a></li>
+                                        <li><a href="#">Flutter</a></li>
+                                        <li><a href="#">IONic</a></li>
+                                    </ul>
+                                
+                                </div>
+                            
+                            </li>
+                        </ul>
+                    </div>
+                
+                </li>
+                <li><i class="fa fa-users"></i><a>Clients</a></li>
+                <li><i class="fa fa-angellist"></i><a>Investers</a></li>
+                <li><i class="fa fa-id-card"></i><a>Tourist Spot</a>
+                    <div class="sub-menu1">
+                        <ul>
+                             <li class="hover-me"><a href="#">Indonesia</a><i class="fa fa-angle-right"></i>
+                                <div class="sub-menu2">
+                                    <ul>
+                                        <li><a href="#">Bali</a></li>
+                                        <li><a href="#">Jakarta</a></li>
+                                        <li><a href="#">Bandung</a></li>
+                                        <li><a href="#">Nature</a></li>
+                                    </ul>
+                                
+                                </div>
+                            
+                            </li>
+                            <li class="hover-me"><a href="#">Maldives</a><i class="fa fa-angle-right"></i>
+                            
+                                <div class="sub-menu2">
+                                     <ul>
+                                        <li><a href="#">Male</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            
+                            </li>
+                            <li class="hover-me"><a href="#">Bangladesh</a><i class="fa fa-angle-right"></i>
+                                       
+                                <div class="sub-menu2">
+                                    <ul>
+                                        <li><a href="#">Rangamati</a></li>
+                                        <li><a href="#">Khagrachori</a></li>
+                                        <li><a href="#">Bandarban</a></li>
+                                        <li><a href="#">Sylhet</a></li>
+                                    </ul>
+                                
+                                </div>
+                                
+                            </li>
+                            <li class="hover-me"><a href="#">India<i class="fa fa-angle-right"></i></a>
+                                <div class="sub-menu2">
+                                    <ul>
+                                        <li><a href="#">Arunachal Preadesh</a></li>
+                                        <li><a href="#">Kashmir</a></li>
+                                        <li><a href="#">Manali</a></li>
+                                        <li><a href="#">Shimla</a></li>
+                                    </ul>
+                                
+                                </div>
+                            
+                            </li>
+                        </ul>
+                    
+                    </div>
+                
+                </li>
+                <li><i class="fa fa-edit"></i><a>Training</a></li>
+                <li><i class="fa fa-phone"></i><a>Contact</a></li>
+            </ul>
+        
+        
+        </div>
+    </body>
+
+</html>
+
+
+<-- CSS Part -->
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("D:/html/images/tra2.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.menu-bar{
+    background: green;
+    text-align: center;
+}
+
+.menu-bar ul{
+    list-style: none;
+    color: white;
+    display: inline-flex;
+    padding: 15px;
+    
+}
+
+.menu-bar ul li{
+    width: 120px;
+    padding: 15px;
+    margin: 0px;
+}
+
+.menu-bar ul li:hover{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.sub-menu1{
+    
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    background: grey;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    
+}
+
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: -10px;
+}
+
+.menu-bar ul li .sub-menu1 ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.menu-bar ul li .sub-menu1 ul li a:hover{
+    color: blue;
+    
+}
+
+.fa-angle-right{
+    float: right;
+}
+
+.sub-menu2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu2{
+    display: block;
+    position: absolute;
+    margin-left: 147px;
+    margin-top: -10px;
+}
+
+.sub-menu2 ul{
+    background: grey;
+}
