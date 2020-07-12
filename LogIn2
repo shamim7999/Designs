@@ -1,0 +1,127 @@
+<-- HTML Part -->
+
+<html>
+<head>
+    <title>Facebook-log in or sign-up</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="Log3CSS.css">
+    
+    
+</head>
+    <body>
+          
+        <div class="login-box">
+           <img src="images/admin.png" class="admin"/>
+             <h1>Log In here</h1>
+
+            <div class="hog">
+                    
+                   
+                    <p>Username</p>
+                    <input type="text" placeholder="Username" />
+                    <p>Username</p>
+                    <input type="password" placeholder="Password" />
+                    <input type="submit" value="LogIn" />
+                    <a href="">Lost your password?</a>
+                    <a href="">Don't have a account?</a>
+            </div>
+            
+        </div>
+        
+   </body>
+
+</html>
+
+
+<-- CSS Part -->
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url("images/coffee.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+   
+}
+
+.login-box{
+    height: 420px;
+    width: 320px;
+    background: #000;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+}
+
+.hog{
+    position: relative;
+    margin-left: 30px;
+    
+}
+.login-box h1{
+    margin-top: 65px;
+    margin-left: 65px;
+}
+
+input{
+    width: 90%;
+}
+
+input[type="submit"]{
+    width: 88%;
+    margin-left: 3px;
+    margin-top: 8px;
+    margin-bottom: 7px;
+    background: #fb2525;
+    height: 10%;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    
+}
+input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+    
+}
+.admin{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -10%;
+    margin-left: 38%;
+    border-radius: 50%;
+}
+.hog a{
+    margin-top: 5px;
+    display: block;
+    text-decoration: none;
+    color: darkgrey;
+}
+.hog a:hover{
+    text-decoration: underline;
+    color: gold;
+    
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: green;
+    color: black;
+    
+}
+input[type="submit"]:active{
+    background: yellow;
+    color: red;
+}
